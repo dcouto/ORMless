@@ -1,0 +1,24 @@
+﻿@using ORMless.Feature.GenericCallout
+
+@model ORMless.Feature.GenericCallout.Models.GenericCallout
+
+@if(Model != null && Model.InnerItem != null)
+{
+    <div class="generic-callout" style="background-color: @Model.BackgroundColor">
+        @Html.Sitecore().BeginField(Generic_Callout_Constants.General_Link_FieldName, Model.InnerItem, new { haschildren = true })
+            <h2>@Html.Sitecore().Field(Generic_Callout_Constants.Title_FieldName, Model)</h2>
+
+            @Html.Sitecore().Field(Generic_Callout_Constants.Description_FieldName, Model)
+
+            <p>@Html.Sitecore().Field(Generic_Callout_Constants.Date_FieldName, Model)</p>
+
+            <p>@Html.Sitecore().Field(Generic_Callout_Constants.Datetime_FieldName, Model)</p>
+        @Html.Sitecore().EndField()
+    </div>
+}
+else if (Sitecore.Context.PageMode.IsExperienceEditor)
+{
+    <div class="generic-callout">
+        <p>Generic Callout - the datasource is not set.  Click here to set the datasource.</p>
+    </div>
+}

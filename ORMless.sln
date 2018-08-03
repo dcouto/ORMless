@@ -1,0 +1,93 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{6FD94707-38F9-48D8-A539-F4CDB9472139}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{2FC4A8B3-F070-4809-9298-707A3FA7E4A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{35C51F58-33DF-4990-BF2A-3341F4FD9160}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GenericCallout", "GenericCallout", "{7E097B22-29CB-4FE3-9D60-EB8594F5D233}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".tds", ".tds", "{DA663900-B936-43B1-920B-321DA3B677A0}"
+	ProjectSection(SolutionItems) = preProject
+		TdsGlobal.config = TdsGlobal.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORMless.Feature.GenericCallout", "src\Feature\GenericCallout\code\ORMless.Feature.GenericCallout.csproj", "{CF8AFB84-5079-48A2-8BBA-FF9EA382228B}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "ORMless.Feature.GenericCallout.Tds", "src\Feature\GenericCallout\serialization\ORMless.Feature.GenericCallout.Tds.scproj", "{14E59233-14BD-483D-8032-65F083445227}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORMless.Project.Site", "src\Project\ORMless.Project.Site\code\ORMless.Project.Site.csproj", "{4238997B-1865-4AFE-B5D1-87DA3FF47E5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GenericCarousel", "GenericCarousel", "{16C776B3-856E-433A-AA84-713CD9C9449A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORMless.Feature.GenericCarousel", "src\Feature\GenericCarousel\code\ORMless.Feature.GenericCarousel.csproj", "{CAC94A92-A68D-4DD6-A2B3-3C323D431646}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "ORMless.Feature.GenericCarousel.Tds", "src\Feature\GenericCarousel\serialization\ORMless.Feature.GenericCarousel.Tds.scproj", "{CEA346F1-8C5C-4ABE-A1F3-88D5ECA30906}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TwoColumnsStructuralRendering", "TwoColumnsStructuralRendering", "{97F7EB2A-B701-4924-A9FA-7741804BCADF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORMless.Feature.TwoColumnsStructuralRendering", "src\Feature\TwoColumnsStructuralRendering\code\ORMless.Feature.TwoColumnsStructuralRendering.csproj", "{D0169FAF-961A-47BE-949A-1341D6BD2D30}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection", "DependencyInjection", "{953CBEAF-26CE-4F93-A431-DC5EB15A9EDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORMless.Foundation.DependencyInjection", "src\Foundation\DependencyInjection\code\ORMless.Foundation.DependencyInjection.csproj", "{8DA0C986-3C5C-4402-AB07-A0C44EDCD1AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF8AFB84-5079-48A2-8BBA-FF9EA382228B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF8AFB84-5079-48A2-8BBA-FF9EA382228B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF8AFB84-5079-48A2-8BBA-FF9EA382228B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF8AFB84-5079-48A2-8BBA-FF9EA382228B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14E59233-14BD-483D-8032-65F083445227}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14E59233-14BD-483D-8032-65F083445227}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14E59233-14BD-483D-8032-65F083445227}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14E59233-14BD-483D-8032-65F083445227}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4238997B-1865-4AFE-B5D1-87DA3FF47E5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4238997B-1865-4AFE-B5D1-87DA3FF47E5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4238997B-1865-4AFE-B5D1-87DA3FF47E5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4238997B-1865-4AFE-B5D1-87DA3FF47E5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAC94A92-A68D-4DD6-A2B3-3C323D431646}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAC94A92-A68D-4DD6-A2B3-3C323D431646}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAC94A92-A68D-4DD6-A2B3-3C323D431646}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAC94A92-A68D-4DD6-A2B3-3C323D431646}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEA346F1-8C5C-4ABE-A1F3-88D5ECA30906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEA346F1-8C5C-4ABE-A1F3-88D5ECA30906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEA346F1-8C5C-4ABE-A1F3-88D5ECA30906}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEA346F1-8C5C-4ABE-A1F3-88D5ECA30906}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D0169FAF-961A-47BE-949A-1341D6BD2D30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0169FAF-961A-47BE-949A-1341D6BD2D30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0169FAF-961A-47BE-949A-1341D6BD2D30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0169FAF-961A-47BE-949A-1341D6BD2D30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DA0C986-3C5C-4402-AB07-A0C44EDCD1AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DA0C986-3C5C-4402-AB07-A0C44EDCD1AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA0C986-3C5C-4402-AB07-A0C44EDCD1AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DA0C986-3C5C-4402-AB07-A0C44EDCD1AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7E097B22-29CB-4FE3-9D60-EB8594F5D233} = {2FC4A8B3-F070-4809-9298-707A3FA7E4A2}
+		{CF8AFB84-5079-48A2-8BBA-FF9EA382228B} = {7E097B22-29CB-4FE3-9D60-EB8594F5D233}
+		{14E59233-14BD-483D-8032-65F083445227} = {7E097B22-29CB-4FE3-9D60-EB8594F5D233}
+		{4238997B-1865-4AFE-B5D1-87DA3FF47E5D} = {35C51F58-33DF-4990-BF2A-3341F4FD9160}
+		{16C776B3-856E-433A-AA84-713CD9C9449A} = {2FC4A8B3-F070-4809-9298-707A3FA7E4A2}
+		{CAC94A92-A68D-4DD6-A2B3-3C323D431646} = {16C776B3-856E-433A-AA84-713CD9C9449A}
+		{CEA346F1-8C5C-4ABE-A1F3-88D5ECA30906} = {16C776B3-856E-433A-AA84-713CD9C9449A}
+		{97F7EB2A-B701-4924-A9FA-7741804BCADF} = {2FC4A8B3-F070-4809-9298-707A3FA7E4A2}
+		{D0169FAF-961A-47BE-949A-1341D6BD2D30} = {97F7EB2A-B701-4924-A9FA-7741804BCADF}
+		{953CBEAF-26CE-4F93-A431-DC5EB15A9EDD} = {6FD94707-38F9-48D8-A539-F4CDB9472139}
+		{8DA0C986-3C5C-4402-AB07-A0C44EDCD1AD} = {953CBEAF-26CE-4F93-A431-DC5EB15A9EDD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CCBEDC02-CB37-4131-B705-ABC4CD6E1B25}
+	EndGlobalSection
+EndGlobal
