@@ -112,7 +112,7 @@
   <ItemGroup>
     <Content Include="App_Config\Include\ORMless.Feature.GenericCarousel.config" />
     <None Include="packages.config" />
-    <Content Include="Views\Feature\GenericCarousel\Default.cshtml" />
+    <Content Include="Views\GenericCarousel\Default.cshtml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Views\Web.config" />
   </ItemGroup>

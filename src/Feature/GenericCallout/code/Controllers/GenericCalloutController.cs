@@ -6,7 +6,6 @@ namespace ORMless.Feature.GenericCallout.Controllers
 {
     public class GenericCalloutController : Controller
     {
-        private string _defaultViewPath = "/Views/Feature/GenericCallout/Default.cshtml";
         private IGenericCalloutService _genericCalloutService;
 
         public GenericCalloutController(IGenericCalloutService genericCalloutService)
@@ -18,7 +17,7 @@ namespace ORMless.Feature.GenericCallout.Controllers
         {
             var model = _genericCalloutService.GetGenericCallout(RenderingContext.CurrentOrNull);
 
-            return View(_defaultViewPath, model);
+            return View(model);
         }
     }
 }
