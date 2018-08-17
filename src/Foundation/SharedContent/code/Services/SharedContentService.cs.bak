@@ -1,0 +1,20 @@
+﻿using System;
+using Foundation.BaseClasses.Services;
+using Sitecore.Mvc.Presentation;
+
+namespace Foundation.SharedContent.Services
+{
+    public class SharedContentService : BaseService, ISharedContentService
+    {
+        public SharedContentService(RenderingContext renderingContext, Guid expectedTemplateId) : base(renderingContext, expectedTemplateId)
+        {
+        }
+
+        public Models.SharedContent GetSharedContent()
+        {
+            var model = new Models.SharedContent(Datasource);
+
+            return model;
+        }
+    }
+}

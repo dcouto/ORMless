@@ -1,0 +1,14 @@
+﻿@using {{layer}}.{{name}}
+
+@model {{layer}}.{{name}}.Models.{{name}}
+
+<div class="{{name}}">
+	@if(Model != null && Model.SitecoreItem != null)
+	{
+		
+	}
+	else if (Sitecore.Context.PageMode.IsExperienceEditor)
+	{
+		<p>{{name}} - the datasource is not set.  Click here to set the datasource.</p>
+	}
+</div>

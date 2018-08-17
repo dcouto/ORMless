@@ -1,0 +1,14 @@
+﻿@using Feature.GenericCard
+
+@model Feature.GenericCard.Models.GenericCard
+
+<div class="GenericCard">
+	@if(Model != null && Model.SitecoreItem != null)
+	{
+		
+	}
+	else if (Sitecore.Context.PageMode.IsExperienceEditor)
+	{
+		<p>GenericCard - the datasource is not set.  Click here to set the datasource.</p>
+	}
+</div>

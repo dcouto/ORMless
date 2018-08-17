@@ -1,0 +1,14 @@
+﻿@using Foundation.Site
+
+@model Foundation.Site.Models.Site
+
+<div class="Site">
+	@if(Model != null && Model.SitecoreItem != null)
+	{
+		
+	}
+	else if (Sitecore.Context.PageMode.IsExperienceEditor)
+	{
+		<p>Site - the datasource is not set.  Click here to set the datasource.</p>
+	}
+</div>

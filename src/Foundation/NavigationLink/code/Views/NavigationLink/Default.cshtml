@@ -1,0 +1,14 @@
+﻿@using Foundation.NavigationLink
+
+@model Foundation.NavigationLink.Models.NavigationLink
+
+<div class="NavigationLink">
+	@if(Model != null && Model.SitecoreItem != null)
+	{
+		
+	}
+	else if (Sitecore.Context.PageMode.IsExperienceEditor)
+	{
+		<p>NavigationLink - the datasource is not set.  Click here to set the datasource.</p>
+	}
+</div>

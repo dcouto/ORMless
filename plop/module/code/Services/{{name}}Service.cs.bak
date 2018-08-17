@@ -1,0 +1,20 @@
+﻿using System;
+using Foundation.BaseClasses.Services;
+using Sitecore.Mvc.Presentation;
+
+namespace {{layer}}.{{name}}.Services
+{
+    public class {{name}}Service : BaseService, I{{name}}Service
+    {
+        public {{name}}Service(RenderingContext renderingContext, Guid expectedTemplateId) : base(renderingContext, expectedTemplateId)
+        {
+        }
+
+        public Models.{{name}} Get{{name}}()
+        {
+            var model = new Models.{{name}}(Datasource);
+
+            return model;
+        }
+    }
+}

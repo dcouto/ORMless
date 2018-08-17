@@ -1,0 +1,17 @@
+@include max-screen(lg) {
+    .{{lowerCase name}} {
+    
+    }
+}
+
+@include max-screen(md) {
+    .{{lowerCase name}} {
+    
+    }
+}
+
+@include max-screen(sm) {
+    .{{lowerCase name}} {
+    
+    }
+}

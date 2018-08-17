@@ -1,0 +1,14 @@
+﻿@using Foundation.SharedContent
+
+@model Foundation.SharedContent.Models.SharedContent
+
+<div class="SharedContent">
+	@if(Model != null && Model.SitecoreItem != null)
+	{
+		
+	}
+	else if (Sitecore.Context.PageMode.IsExperienceEditor)
+	{
+		<p>SharedContent - the datasource is not set.  Click here to set the datasource.</p>
+	}
+</div>
