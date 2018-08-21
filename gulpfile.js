@@ -24,7 +24,7 @@ gulp.task("default", function (callback) {
 
     return runSequence(
         "01-Nuget-Restore",
-        "02-Publish-All-Projects",
+        publishProjects(),
         callback);
 });
 
@@ -76,26 +76,20 @@ var publishStream = function (stream, dest) {
         }));
 }
 
-var publishProject = function (location, dest) {
+var publishProject = function (dest) {
     dest = dest || config.websiteRoot;
 
-    console.log("publish to " + dest + " folder");
-
-    return gulp.src(["./src/" + location + "/code/*.csproj"])
+    return gulp.src(["./src/**/*.csproj"])
         .pipe(foreach(function (stream, file) {
             return publishStream(stream, dest);
         }));
 }
 
-var publishProjects = function (location, dest) {
-    dest = dest || config.websiteRoot;
-
-    console.log("publish to " + dest + " folder");
-
+var publishProjects = function () {
     return gulp
-        .src(location)
+        .src(["./src/**/*.csproj"])
         .pipe(foreach(function (stream, file) {
-            return publishStream(stream, dest);
+            return publishStream(stream, config.websiteRoot);
         }));
 };
 
