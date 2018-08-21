@@ -1,8 +1,8 @@
-﻿using ORMless.Feature.GenericCarousel.Services;
+﻿using Feature.GenericCarousel.Services;
 using Sitecore.Mvc.Presentation;
 using System.Web.Mvc;
 
-namespace ORMless.Feature.GenericCarousel.Controllers
+namespace Feature.GenericCarousel.Controllers
 {
     public class GenericCarouselController : Controller
     {

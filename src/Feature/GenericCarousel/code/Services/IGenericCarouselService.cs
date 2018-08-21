@@ -2,7 +2,7 @@
 using Sitecore.Mvc.Presentation;
 using System.Collections.Generic;
 
-namespace ORMless.Feature.GenericCarousel.Services
+namespace Feature.GenericCarousel.Services
 {
     public interface IGenericCarouselService
     {

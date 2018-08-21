@@ -30,6 +30,22 @@ namespace Feature.GenericCard
 			public static readonly Guid Image_FieldId = new Guid("a24220fa-0377-41e3-b899-fc6273b4264b");
 			public const string Image_FieldName = "Image";
 			
+					
+			public static readonly Guid Link_Text_FieldId = new Guid("590acc35-dff5-4e3e-af84-9e744a0c2a38");
+			public const string Link_Text_FieldName = "Link Text";
+			
+					
+			public static readonly Guid Link_FieldId = new Guid("f2baa69e-41ef-4a1c-ae55-d2ed60e0f7fc");
+			public const string Link_FieldName = "Link";
+			
+					
+			public static readonly Guid Content_Simple_Description_FieldId = new Guid("5a2bd0dd-e068-400d-9141-22923a762697");
+			public const string Content_Simple_Description_FieldName = "Content Simple Description";
+			
+					
+			public static readonly Guid Content_Title_FieldId = new Guid("c51e85d9-8016-44ea-8038-28d1a1f3c524");
+			public const string Content_Title_FieldName = "Content Title";
+			
 			
 
 	}

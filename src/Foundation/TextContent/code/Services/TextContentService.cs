@@ -1,5 +1,6 @@
 ﻿using Foundation.BaseClasses.Services;
 using Sitecore.Mvc.Presentation;
+using System;
 
 namespace Foundation.TextContent.Services
 {
@@ -7,7 +8,7 @@ namespace Foundation.TextContent.Services
     {
         public Models.TextContent GetTextContent(RenderingContext renderingContext)
         {
-            var model = new Models.TextContent(GetDatasource(renderingContext, Text_Content_Constants.TemplateId));
+            var model = new Models.TextContent(GetDatasource(renderingContext, Guid.Empty));
 
             return model;
         }

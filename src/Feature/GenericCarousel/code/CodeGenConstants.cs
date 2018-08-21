@@ -18,7 +18,7 @@
 using System;
 
 
-namespace ORMless.Feature.GenericCarousel
+namespace Feature.GenericCarousel
 {
 	public static partial class Generic_Carousel_Constants{
 
@@ -32,7 +32,7 @@ namespace ORMless.Feature.GenericCarousel
 
 
 }
-namespace ORMless.Feature.GenericCarousel
+namespace Feature.GenericCarousel
 {
 	public static partial class Generic_Carousels_Folder_Constants{
 
@@ -46,7 +46,7 @@ namespace ORMless.Feature.GenericCarousel
 
 
 }
-namespace ORMless.Feature.GenericCarousel
+namespace Feature.GenericCarousel
 {
 	public static partial class Generic_Carousel_Slide_Constants{
 

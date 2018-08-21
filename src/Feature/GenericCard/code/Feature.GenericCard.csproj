@@ -97,7 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Feature.GenericCard.config" />
-    <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <None Include="Properties\PublishProfiles\glassless.local.pubxml" />
     <None Include="Scripts\GenericCard.js" />
   </ItemGroup>
   <ItemGroup>

@@ -110,10 +110,10 @@
     <Compile Include="Services\IGenericCarouselService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\ORMless.Feature.GenericCarousel.config" />
+    <Content Include="App_Config\Include\Feature.GenericCarousel.config" />
     <None Include="packages.config" />
     <Content Include="Views\GenericCarousel\Default.cshtml" />
-    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\glassless.local.pubxml" />
     <None Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>

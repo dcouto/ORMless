@@ -1,9 +1,9 @@
-﻿using ORMless.Feature.GenericCarousel.Services;
+﻿using Feature.GenericCarousel.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.DependencyInjection;
 using Foundation.DependencyInjection;
 
-namespace ORMless.Feature.GenericCarousel
+namespace Feature.GenericCarousel
 {
     public class DependenciesRegistrar : IServicesConfigurator
     {

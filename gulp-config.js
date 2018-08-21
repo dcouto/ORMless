@@ -1,5 +1,5 @@
 module.exports = function () {
-    var instanceRoot = "C:\\inetpub\\wwwroot\\ormless.local";
+    var instanceRoot = "C:\\inetpub\\wwwroot\\glassless.local";
     var config = {
         websiteRoot: instanceRoot,
         sitecoreLibraries: instanceRoot + "\\bin",

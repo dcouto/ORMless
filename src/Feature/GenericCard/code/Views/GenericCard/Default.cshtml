@@ -5,7 +5,15 @@
 <div class="GenericCard">
 	@if(Model != null && Model.SitecoreItem != null)
 	{
-		
+    <div class="generic-card" style="background-color: @Model.BackgroundColor">
+        <h2>@Html.Sitecore().Field(Generic_Card_Constants.Content_Title_FieldName, Model.SitecoreItem)</h2>
+
+        @Html.Sitecore().Field(Generic_Card_Constants.Content_Simple_Description_FieldName, Model.SitecoreItem)
+
+        @Html.Sitecore().BeginField(Generic_Card_Constants.Link_FieldName, Model.SitecoreItem, new { haschildren = true })
+            @Html.Sitecore().Field(Generic_Card_Constants.Link_Text_FieldName, Model.SitecoreItem)
+        @Html.Sitecore().EndField()
+    </div>
 	}
 	else if (Sitecore.Context.PageMode.IsExperienceEditor)
 	{

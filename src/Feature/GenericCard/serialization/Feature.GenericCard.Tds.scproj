@@ -124,5 +124,9 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
   </ItemGroup>
+  <ItemGroup>
+    <CodeGenReferencedProject Include="{608c64a9-807f-8278-2721-fdb7f7c98bcf}" />
+    <CodeGenReferencedProject Include="{d1bba3fd-0667-7705-1f29-457a96ad502d}" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
 </Project>

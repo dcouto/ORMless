@@ -104,8 +104,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CodeGenConstants.cs" />
+    <Compile Include="DependenciesRegistrar.cs" />
     <Compile Include="Models\TextContent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ITextContentService.cs" />
+    <Compile Include="Services\TextContentService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -130,7 +133,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
