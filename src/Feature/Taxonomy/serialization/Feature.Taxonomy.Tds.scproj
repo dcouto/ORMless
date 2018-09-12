@@ -1,0 +1,74 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0416cc97-0ffc-7a16-486f-dadaf553cfa7}</ProjectGuid>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <SourceWebPhysicalPath>
+    </SourceWebPhysicalPath>
+    <SourceWebProject>
+    </SourceWebProject>
+    <SourceWebVirtualPath>
+    </SourceWebVirtualPath>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <EnableUpdateable>true</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>Feature.Taxonomy.Tds</SingleAssemblyName>
+    <UseWebConfigReplacement>false</UseWebConfigReplacement>
+    <DeleteAppCodeCompiledFiles>true</DeleteAppCodeCompiledFiles>
+    <LegacyFileReplacement>false</LegacyFileReplacement>
+    <AssemblyName>Feature.Taxonomy.Tds</AssemblyName>
+    <Name>Feature.Taxonomy.Tds</Name>
+    <RootNamespace>Feature.Taxonomy.Tds</RootNamespace>
+    <EnableCodeGeneration>True</EnableCodeGeneration>    
+    <CodeGenTargetProject>Feature.Taxonomy</CodeGenTargetProject>
+    <BaseTransformFile>glassv3item.tt</BaseTransformFile>
+    <HeaderTransformFile>glassv3header.tt</HeaderTransformFile>
+    <BaseNamespace>
+    </BaseNamespace>
+    <CodeGenFile>CodeGenConstants.cs</CodeGenFile>
+    <ManageRoles>False</ManageRoles>
+    <SitecoreDatabase>master</SitecoreDatabase>
+    <AssemblyStatus>Exclude</AssemblyStatus>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SourceWebVirtualPath>/Feature.Taxonomy.csproj</SourceWebVirtualPath>
+    <SourceWebProject>{afafaf3e-4dad-698c-5df6-ef16f26ca8f5}|src\Feature\Taxonomy\code\Feature.Taxonomy.csproj</SourceWebProject>
+    <SourceWebPhysicalPath>..\code</SourceWebPhysicalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeGenTemplate Include="..\..\..\..\tds-code-gen-templates\generalextensions.tt" />
+    <CodeGenTemplate Include="..\..\..\..\tds-code-gen-templates\glassv3header.tt" />
+    <CodeGenTemplate Include="..\..\..\..\tds-code-gen-templates\glassv3item.tt" />
+    <CodeGenTemplate Include="..\..\..\..\tds-code-gen-templates\helpers.tt" />
+    <CodeGenTemplate Include="..\..\..\..\tds-code-gen-templates\inflector.tt" />
+    <CodeGenTemplate Include="..\..\..\..\tds-code-gen-templates\stringextensions.tt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\code\Feature.Taxonomy.csproj">
+      <Project>{afafaf3e-4dad-698c-5df6-ef16f26ca8f5}</Project>
+      <Name>Feature.Taxonomy</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
+</Project>

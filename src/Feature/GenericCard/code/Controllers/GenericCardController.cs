@@ -15,7 +15,7 @@ namespace Feature.GenericCard.Controllers
 
         public ActionResult Default()
         {
-            var model = _GenericCardService.GetGenericCard(RenderingContext.CurrentOrNull);
+            var model = _GenericCardService.GetGenericCard(RenderingContext.CurrentOrNull, Sitecore.Context.Item);
 
             return View(model);
         }

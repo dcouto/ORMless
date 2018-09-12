@@ -1,0 +1,11 @@
+﻿@using Foundation.TextContent
+@using Foundation.Extensions
+
+@model RenderingModel
+
+@if (Model.Item[_Content_Rich_Description_Constants.Content_Rich_Description_FieldName].IsNotNullAndNotWhiteSpace() || Sitecore.Context.PageMode.IsExperienceEditor)
+{
+    <div class="page-body container">
+        @Html.Sitecore().Field(_Content_Rich_Description_Constants.Content_Rich_Description_FieldName)
+    </div>
+}

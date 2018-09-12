@@ -4,7 +4,7 @@ namespace Foundation.BaseClasses.MVC
 {
     public class BaseModel
     {
-        public Item SitecoreItem { get; private set; }
+        public Item SitecoreItem { get; set; }
 
         public BaseModel(Item item)
         {

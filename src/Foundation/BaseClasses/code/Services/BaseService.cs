@@ -1,6 +1,7 @@
 ﻿using Sitecore.Data.Items;
 using Sitecore.Mvc.Presentation;
 using System;
+using Foundation.Extensions;
 
 namespace Foundation.BaseClasses.Services
 {
@@ -27,28 +28,35 @@ namespace Foundation.BaseClasses.Services
             return _sitecoreMvcRendering;
         }
 
-        protected Item GetDatasource(RenderingContext renderingContext, Guid expectedTemplateId)
+        /// <summary>
+        /// Returns the DataSource from the renderingContext object if it's set and it's template matches the expectedTemplateId.
+        /// Otherwise, returns the contextItem if it's set and it's template matches the expectedTemplateId.
+        /// </summary>
+        /// <param name="renderingContext"></param>
+        /// <param name="contextItem"></param>
+        /// <param name="expectedTemplateId"></param>
+        /// <returns></returns>
+        protected Item GetDatasource(RenderingContext renderingContext, Item contextItem, Guid expectedTemplateId)
         {
-            var datasourceId = GetSitecoreMvcRendering(renderingContext).DataSource;
+            var mvcRendering = GetSitecoreMvcRendering(renderingContext);
 
-            if (string.IsNullOrWhiteSpace(datasourceId))
+            var datasourceId = mvcRendering.DataSource;
+
+            if (!string.IsNullOrWhiteSpace(datasourceId))
             {
-                throw new Exception("rendering.DataSource is null.");
+                var datasource = Sitecore.Context.Database.GetItem(datasourceId);
+
+                if (datasource != null && datasource.TemplateID.Guid == expectedTemplateId)
+                {
+                    return datasource;
+                }
+            }
+            else if(contextItem.IsOrInherits(expectedTemplateId))
+            {
+                return contextItem;
             }
 
-            var datasource = Sitecore.Context.Database.GetItem(datasourceId);
-
-            if (datasource == null)
-            {
-                throw new Exception(string.Format("Unable to find item with ID {0}.", datasourceId));
-            }
-
-            if (datasource.TemplateID.Guid != expectedTemplateId)
-            {
-                throw new Exception("Item template does not match expectedTemplateId.");
-            }
-
-            return datasource;
+            return null;
         }
 
         protected RenderingParameters GetRenderingParameters(RenderingContext renderingContext)

@@ -1,0 +1,59 @@
+----item----
+version: 1
+id: {AE324F25-0341-4628-9528-0D15361BDA4B}
+database: master
+path: /sitecore/templates/Feature/Global Header/Global Header/Global Header
+parent: {A7E5CF90-E5A3-4033-8DD4-82FFCE20C659}
+name: Global Header
+master: {00000000-0000-0000-0000-000000000000}
+template: {E269FBB5-3750-427A-9149-7AA950B49301}
+templatekey: Template section
+created: 20180821T211506Z
+
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 32
+
+Office/32x32/document_header.png
+----version----
+language: en
+version: 1
+revision: 3236e614-4b4d-42bd-9381-1cba61daf3e1
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180821T211506Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3236e614-4b4d-42bd-9381-1cba61daf3e1
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180822T152232Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

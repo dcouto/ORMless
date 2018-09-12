@@ -1,0 +1,59 @@
+----item----
+version: 1
+id: {3AE0876A-C5DC-4CDF-9443-29EF613F2A1D}
+database: master
+path: /sitecore/content/Global Content/Global Headers/Global Header 1/Common Usecases
+parent: {2367CB53-3B6D-464D-861B-B7D16D83FBA9}
+name: Common Usecases
+master: {00000000-0000-0000-0000-000000000000}
+template: {518E417C-B405-4AC8-97A0-6CE516AB6977}
+templatekey: Header Navigation Link
+created: 20180822T160446Z
+
+----version----
+language: en
+version: 1
+revision: d7389902-3149-48ec-8e01-16dc6d9d1e47
+
+----field----
+field: {F2BAA69E-41EF-4A1C-AE55-D2ED60E0F7FC}
+name: Link
+key: link
+content-length: 159
+
+<link id="{17B7FF10-E656-4969-8215-07AE12A4EAB9}" querystring="" text="" anchor="" title="" class="" url="/ORMless/Home/Common Usecases" linktype="internal" />
+----field----
+field: {590ACC35-DFF5-4E3E-AF84-9E744A0C2A38}
+name: Link Text
+key: link text
+content-length: 15
+
+Common Usecases
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180822T160446Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d7389902-3149-48ec-8e01-16dc6d9d1e47
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180829T235929Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

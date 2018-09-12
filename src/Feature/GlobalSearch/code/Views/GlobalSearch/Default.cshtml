@@ -1,0 +1,67 @@
+﻿@using Feature.GlobalSearch
+@using Foundation.Events
+@using Foundation.Extensions
+@using Foundation.Publications
+@using Foundation.TextContent
+
+@model Feature.GlobalSearch.Models.GlobalSearch
+
+<style>
+    .results {
+        list-style: none;
+        padding-left: 0;
+    }
+</style>
+
+@if (Model != null && Model.SitecoreItem != null)
+{
+    <div class="global-search container">
+        <form>
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" id="q" name="q" placeholder="@Model.SearchBoxPlaceholderText">
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-primary">@Html.Sitecore().Field(Global_Search_Constants.Results_Section_Title_FieldName)</button>
+                </div>
+            </div>
+        </form>
+
+        @if (Model.Results != null && Model.Results.Count > 0)
+        {
+            <hr />
+
+            <h2>@Html.Sitecore().Field(Global_Search_Constants.Results_Section_Title_FieldName)</h2>
+
+            <ul class="results">
+                @foreach (var result in Model.Results)
+                {
+                    var badge = "";
+                    var badgeClass = "";
+
+                    if (result.IsOrInherits(_Event_Detail_Page_Type_Constants.TemplateId))
+                    {
+                        badge = "Event";
+                        badgeClass = "primary";
+                    }
+                    else if (result.IsOrInherits(_Publication_Detail_Page_Type_Constants.TemplateId))
+                    {
+                        badge = "Publication";
+                        badgeClass = "success";
+                    }
+
+                    <li>
+                        <a href="@result.GetUrl()">@Html.Sitecore().Field(_Content_Title_Constants.Content_Title_FieldName, result, new { DisableWebEdit = true }) <span class="badge badge-@badgeClass">@badge</span></a>
+                        <p class="simple-description">@Html.Sitecore().Field(_Content_Simple_Description_Constants.Content_Simple_Description_FieldName, result, new { DisableWebEdit = true })</p>
+                    </li>
+                }
+            </ul>
+        }
+    </div>
+}
+else if (Sitecore.Context.PageMode.IsExperienceEditor)
+{
+    <div class="global-search">
+        <p>GlobalSearch - the datasource is not set.  Click here to set the datasource.</p>
+    </div>
+}

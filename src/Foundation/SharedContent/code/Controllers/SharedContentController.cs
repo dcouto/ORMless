@@ -15,7 +15,7 @@ namespace Foundation.SharedContent.Controllers
 
         public ActionResult Default()
         {
-            var model = _SharedContentService.GetSharedContent(RenderingContext.CurrentOrNull);
+            var model = _SharedContentService.GetSharedContent(RenderingContext.CurrentOrNull, Sitecore.Context.Item);
 
             return View(model);
         }

@@ -15,7 +15,7 @@ namespace Foundation.NavigationLink.Controllers
 
         public ActionResult Default()
         {
-            var model = _NavigationLinkService.GetNavigationLink(RenderingContext.CurrentOrNull);
+            var model = _NavigationLinkService.GetNavigationLink(RenderingContext.CurrentOrNull, Sitecore.Context.Item);
 
             return View(model);
         }

@@ -110,6 +110,7 @@
     <Content Include="js\bootstrap.bundle.min.js.map" />
     <Content Include="js\bootstrap.js.map" />
     <Content Include="js\bootstrap.min.js.map" />
+    <Content Include="App_Config\Include\ORMless.Project.Site.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="js\jquery-3.3.1.min.js" />
     <Content Include="Views\Project\ORMless\ORMlessDefaultLayout.cshtml" />

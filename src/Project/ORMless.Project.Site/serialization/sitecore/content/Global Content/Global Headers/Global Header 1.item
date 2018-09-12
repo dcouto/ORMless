@@ -1,0 +1,59 @@
+----item----
+version: 1
+id: {2367CB53-3B6D-464D-861B-B7D16D83FBA9}
+database: master
+path: /sitecore/content/Global Content/Global Headers/Global Header 1
+parent: {DE00FF9A-AB1E-41DD-B379-81E2E2735E82}
+name: Global Header 1
+master: {00000000-0000-0000-0000-000000000000}
+template: {A7E5CF90-E5A3-4033-8DD4-82FFCE20C659}
+templatekey: Global Header
+created: 20180821T211414Z
+
+----version----
+language: en
+version: 1
+revision: 3cf3620d-5950-4b74-ad77-735e048ecfa5
+
+----field----
+field: {C67B6C8B-7636-4624-95DE-BD2F80BF6918}
+name: Logo
+key: logo
+content-length: 58
+
+<image mediaid="{2D00DBF8-DE74-46CF-AF96-25CEB40BCD34}" />
+----field----
+field: {CF339DF8-C6A4-454C-AB1F-905DEF08E343}
+name: Logo Link
+key: logo link
+content-length: 124
+
+<link text="" anchor="" linktype="internal" class="" title=""  querystring="" id="{9A92B60D-14AA-4A35-B573-56E3B7F74F1F}" />
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180821T211414Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3cf3620d-5950-4b74-ad77-735e048ecfa5
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180827T211910Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

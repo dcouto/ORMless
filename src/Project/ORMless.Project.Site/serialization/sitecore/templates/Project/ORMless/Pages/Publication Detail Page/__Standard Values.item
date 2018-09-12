@@ -1,0 +1,52 @@
+----item----
+version: 1
+id: {5385F93C-6308-4036-8AD0-038A98CD9233}
+database: master
+path: /sitecore/templates/Project/ORMless/Pages/Publication Detail Page/__Standard Values
+parent: {D10E44F2-444D-42D5-9490-AC29ED6ED41B}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {D10E44F2-444D-42D5-9490-AC29ED6ED41B}
+templatekey: Publication Detail Page
+created: 20180829T205752Z
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 837
+
+<r><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{07964BC7-68C0-4C96-BB22-328FD9648220}"><r ds="" id="{F19FB0DA-36E5-42EF-B51F-5C5E016B6B5E}" par="" ph="ormless-default-layout" uid="{69661CCE-57CC-4185-9FEC-5DC301E9D2AF}" /><r id="{E8F6656B-A584-4D9A-9F95-E18E5A69EE20}" ph="ormless-default-layout" uid="{67A11DF2-6E37-48DA-9902-79945743A2B5}" /><r id="{9EF03E38-3C3D-43A1-9767-9D133E36C32B}" ph="ormless-default-layout" uid="{C1A3CD14-C908-4626-9536-9CCE557B27FE}" /><r ds="" id="{16EB8190-3F88-4E5E-AAE7-9B625A3ED00D}" par="Background Color" ph="sidebar" uid="{6611C5F0-FA0D-4C42-A480-1FB055600314}" /><r id="{47E8F3D8-8274-4CB6-B4AF-9E6572A93EB1}" ph="main" uid="{4A50EDEC-A5E0-4DA4-9DC1-8C1D323FA174}" /><r ds="" id="{E78C108B-B3BE-4C18-996C-89110AA12FF9}" par="" ph="main" uid="{04FDC1C3-2068-4743-B4BD-82B5F9CD424A}" /></d></r>
+----version----
+language: en
+version: 1
+revision: f7524554-d896-484e-89c9-e4e9a4ffd448
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180829T205752Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f7524554-d896-484e-89c9-e4e9a4ffd448
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180829T232154Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

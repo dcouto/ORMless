@@ -24,16 +24,12 @@ gulp.task("default", function (callback) {
 
     return runSequence(
         "01-Nuget-Restore",
-        publishProjects(),
+        "02-Publish-All-Projects",
         callback);
 });
 
-/*****************************
-  Initial setup
-*****************************/
 gulp.task("01-Nuget-Restore", function (callback) {
-    var solution = "./" + config.solutionName + ".sln";
-    return gulp.src(solution).pipe(nugetRestore());
+    return gulp.src("./" + config.solutionName + ".sln").pipe(nugetRestore());
 });
 
 gulp.task("02-Publish-All-Projects", function (callback) {
@@ -45,10 +41,6 @@ gulp.task("02-Publish-All-Projects", function (callback) {
         callback);
 });
 
-
-/*****************************
-  Publish
-*****************************/
 var publishStream = function (stream, dest) {
     var targets = ["Build"];
 
@@ -74,20 +66,11 @@ var publishStream = function (stream, dest) {
                 _FindDependencies: "false"
             }
         }));
-}
+};
 
-var publishProject = function (dest) {
-    dest = dest || config.websiteRoot;
-
-    return gulp.src(["./src/**/*.csproj"])
-        .pipe(foreach(function (stream, file) {
-            return publishStream(stream, dest);
-        }));
-}
-
-var publishProjects = function () {
+var publishProjects = function (dest) {
     return gulp
-        .src(["./src/**/*.csproj"])
+        .src(['./src/' + dest + '/code/*.csproj'])
         .pipe(foreach(function (stream, file) {
             return publishStream(stream, config.websiteRoot);
         }));
@@ -120,13 +103,13 @@ gulp.task("Build-Solution", function () {
 });
 
 gulp.task("Publish-Foundation-Projects", function () {
-    return publishProjects(config.foundationPaths);
+    return publishProjects('Foundation');
 });
 
 gulp.task("Publish-Feature-Projects", function () {
-    return publishProjects(config.featurePaths);
+    return publishProjects('Feature');
 });
 
 gulp.task("Publish-Project-Projects", function () {
-    return publishProjects(config.projectPaths);
+    return publishProjects('Project/*');
 });

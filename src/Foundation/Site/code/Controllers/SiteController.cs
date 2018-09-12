@@ -15,7 +15,7 @@ namespace Foundation.Site.Controllers
 
         public ActionResult Default()
         {
-            var model = _SiteService.GetSite(RenderingContext.CurrentOrNull);
+            var model = _SiteService.GetSite(RenderingContext.CurrentOrNull, Sitecore.Context.Item);
 
             return View(model);
         }

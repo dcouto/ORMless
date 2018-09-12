@@ -1,0 +1,73 @@
+----item----
+version: 1
+id: {96902C24-1F0E-49CE-BE60-A842275F3507}
+database: master
+path: /sitecore/templates/Feature/Generic Card/Generic Cards Callouts Folder
+parent: {AA14F2E8-BA32-49FB-8DAB-92F71C6E7240}
+name: Generic Cards Callouts Folder
+master: {00000000-0000-0000-0000-000000000000}
+template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
+templatekey: Template
+created: 20180727T220404Z
+
+----field----
+field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
+name: __Base template
+key: __base template
+content-length: 38
+
+{A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
+----field----
+field: {F7D48A55-2158-4F02-9356-756654404F73}
+name: __Standard values
+key: __standard values
+content-length: 38
+
+{68AD8415-E9D5-4E3A-AC2E-3C054C7E2916}
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 34
+
+Applications/32x32/folder_blue.png
+----version----
+language: en
+version: 1
+revision: 05c16e83-06e7-4bfc-bb31-3bcae47b858d
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180727T220404Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+05c16e83-06e7-4bfc-bb31-3bcae47b858d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180810T212727Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

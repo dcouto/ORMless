@@ -1,0 +1,26 @@
+﻿@using Feature.GenericJumbotron
+
+@model Feature.GenericJumbotron.Models.GenericJumbotron
+
+@if (Model != null && Model.SitecoreItem != null)
+{
+    <div class="container">
+        <div class="generic-jumbotron jumbotron jumbotron-fluid">
+            <div class="container">
+                <h2 class="display-4">Hello, world!</h2>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </div>
+        </div>
+    </div>
+}
+else if (Sitecore.Context.PageMode.IsExperienceEditor)
+{
+    <div class="container">
+        <div class="generic-jumbotron jumbotron jumbotron-fluid">
+            <div class="container">
+                <p>GenericJumbotron - the datasource is not set.  Click here to set the datasource.</p>
+            </div>
+        </div>
+    </div>
+}

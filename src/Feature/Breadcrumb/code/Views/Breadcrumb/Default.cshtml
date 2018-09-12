@@ -1,0 +1,16 @@
+﻿@using Feature.Breadcrumb
+@using Foundation.Extensions
+@using Foundation.TextContent
+
+@model Feature.Breadcrumb.Models.Breadcrumb
+
+<div class="container breadcrumb-container">
+    <nav class="breadcrumb" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            @foreach (var item in Model.Items)
+            {
+                <li class="breadcrumb-item"><a href="@item.GetUrl()">@Html.Sitecore().Field(_Content_Title_Constants.Content_Title_FieldName, item)</a></li>
+            }
+        </ol>
+    </nav>
+</div>

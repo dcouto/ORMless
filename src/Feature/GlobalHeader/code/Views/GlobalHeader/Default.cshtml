@@ -1,0 +1,41 @@
+﻿@using Feature.GlobalHeader
+@using Foundation.NavigationLink
+
+@model Feature.GlobalHeader.Models.GlobalHeader
+
+@if (Model != null && Model.SitecoreItem != null)
+{
+    var navLinks = Model.NavigationLinks;
+
+    <div class="container">
+        <nav class="global-header navbar navbar-light bg-light navbar-expand-lg">
+            @Html.Sitecore().BeginField(Global_Header_Constants.Logo_Link_FieldName, Model.SitecoreItem, new { haschildren = true, @class = "navbar-brand" })
+            @Html.Sitecore().Field(Global_Header_Constants.Logo_FieldName, Model.SitecoreItem, new { height = 60 })
+            @Html.Sitecore().EndField()
+
+            @if (navLinks.Any())
+            {
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        @foreach (var navLink in navLinks)
+                        {
+                            <li class="nav-item">
+                                @Html.Sitecore().BeginField(_Navigation_Link_Constants.Link_FieldName, navLink, new { haschildren = true, @class = "nav-link" })
+                                @Html.Sitecore().Field(_Navigation_Link_Constants.Link_Text_FieldName, navLink)
+                                @Html.Sitecore().EndField()
+                            </li>
+                        }
+                    </ul>
+                </div>
+            }
+        </nav>
+    </div>
+}
+else if (Sitecore.Context.PageMode.IsExperienceEditor)
+{
+    <div class="container">
+        <nav class="global-header navbar navbar-light bg-light navbar-expand-lg">
+            <p>GlobalHeader - the datasource is not set.  Click here to set the datasource.</p>
+        </nav>
+    </div>
+}

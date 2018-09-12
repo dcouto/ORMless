@@ -1,22 +1,29 @@
 ﻿@using Feature.GenericCard
+@using Foundation.Extensions
 
-@model Feature.GenericCard.Models.GenericCard
+@model RenderingModel
 
-<div class="GenericCard">
-	@if(Model != null && Model.SitecoreItem != null)
-	{
-    <div class="generic-card" style="background-color: @Model.BackgroundColor">
-        <h2>@Html.Sitecore().Field(Generic_Card_Constants.Content_Title_FieldName, Model.SitecoreItem)</h2>
-
-        @Html.Sitecore().Field(Generic_Card_Constants.Content_Simple_Description_FieldName, Model.SitecoreItem)
-
-        @Html.Sitecore().BeginField(Generic_Card_Constants.Link_FieldName, Model.SitecoreItem, new { haschildren = true })
-            @Html.Sitecore().Field(Generic_Card_Constants.Link_Text_FieldName, Model.SitecoreItem)
-        @Html.Sitecore().EndField()
+@if (Model.Item.IsOrInherits(Generic_Card_Constants.TemplateId))
+{
+    <div class="generic-card card">
+        @Html.Sitecore().Field(Generic_Card_Constants.Image_FieldName, new { @class = "card-img-top" })
+        
+        <div class="card-body">
+            <h5 class="card-title">@Html.Sitecore().Field(Generic_Card_Constants.Content_Title_FieldName)</h5>
+        
+            <p class="card-text">@Html.Sitecore().Field(Generic_Card_Constants.Content_Simple_Description_FieldName)</p>
+            
+            @Html.Sitecore().BeginField(Generic_Card_Constants.Link_FieldName, new { haschildren = true, @class = "btn btn-primary" })
+            @Html.Sitecore().Field(Generic_Card_Constants.Link_Text_FieldName)
+            @Html.Sitecore().EndField()
+        </div>
     </div>
-	}
-	else if (Sitecore.Context.PageMode.IsExperienceEditor)
-	{
-		<p>GenericCard - the datasource is not set.  Click here to set the datasource.</p>
-	}
-</div>
+}
+else if (Sitecore.Context.PageMode.IsExperienceEditor)
+{
+    <div class="generic-card card">
+        <div class="card-body">
+            <p>Generic Card - the datasource is not set.  Click here to set the datasource.</p>
+        </div>
+    </div>
+}

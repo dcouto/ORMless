@@ -1,0 +1,52 @@
+----item----
+version: 1
+id: {C6C1EA75-0D30-4874-A387-1C0EE316EF7F}
+database: master
+path: /sitecore/templates/Branches/Project/ORMless/Pages/Two Columns Generic Page/$name
+parent: {9626C56B-1740-45E1-AAF1-7A1DA6445726}
+name: $name
+master: {00000000-0000-0000-0000-000000000000}
+template: {1D3DB53B-1E7F-464B-8607-5BDFEFF98BAE}
+templatekey: Generic Page
+created: 20180730T123836Z
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 527
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{07964BC7-68C0-4C96-BB22-328FD9648220}"><p uid="{174ACA65-90C7-4F13-B6E9-2CFB8C079487}" key="main" md="/sitecore/layout/Placeholder Settings/Project/ORMless/main" /><p uid="{9DA72AD5-F71C-4714-91DA-575E60F3D905}" key="sidebar" md="/sitecore/layout/Placeholder Settings/Project/ORMless/sidebar" /><r id="{9EF03E38-3C3D-43A1-9767-9D133E36C32B}" ph="glassless-default-layout" uid="{9CDFF930-E0CC-4C3C-9BE9-46C04B41684D}" /></d></r>
+----version----
+language: en
+version: 1
+revision: e7257c08-0509-46bf-9a99-2d6d47ed49ed
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180730T123836Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e7257c08-0509-46bf-9a99-2d6d47ed49ed
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180730T124255Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

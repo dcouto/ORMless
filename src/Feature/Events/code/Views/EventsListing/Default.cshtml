@@ -1,0 +1,37 @@
+﻿@using Feature.Events
+@using Foundation.TextContent
+@using Foundation.Events
+@using Foundation.Extensions
+
+@model Feature.Events.Models.EventsListing
+
+<style>
+    .results {
+        list-style: none;
+        padding-left: 0;
+    }
+</style>
+
+@if (Model != null && Model.UpcomingEvents.Count > 0)
+{
+    <div class="events-listing container">
+        <ul class="results">
+            @foreach (var result in Model.UpcomingEvents)
+            {
+                <li>
+                    <a href="@result.GetUrl()">@Html.Sitecore().Field(_Content_Title_Constants.Content_Title_FieldName, result, new { DisableWebEdit = true })</a>
+                    <p class="date">@Html.Sitecore().Field(_Event_Detail_Page_Type_Constants.Content_Datetime_FieldName, result, new { DisableWebEdit = true, @format = "D" })</p>
+                    <p class="simple-description">@Html.Sitecore().Field(_Content_Simple_Description_Constants.Content_Simple_Description_FieldName, result, new { DisableWebEdit = true })</p>
+                </li>
+
+                <hr />
+            }
+        </ul>
+    </div>
+}
+else if (Sitecore.Context.PageMode.IsExperienceEditor)
+{
+    <div class="events-listing container">
+        <p>Events - the datasource is not set.  Click here to set the datasource.</p>
+    </div>
+}

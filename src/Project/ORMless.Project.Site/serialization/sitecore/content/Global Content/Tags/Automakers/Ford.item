@@ -1,0 +1,52 @@
+----item----
+version: 1
+id: {210F8A06-6AE4-4E88-87D5-16763830EEFA}
+database: master
+path: /sitecore/content/Global Content/Tags/Automakers/Ford
+parent: {B815F3CC-590D-4216-9989-CE085A0133D6}
+name: Ford
+master: {00000000-0000-0000-0000-000000000000}
+template: {FD3A4F3F-B372-487B-B885-E78EB229CCD6}
+templatekey: Tag
+created: 20180907T151429Z
+
+----version----
+language: en
+version: 1
+revision: 479ad47b-f75c-4187-90e2-b9867561c231
+
+----field----
+field: {C51E85D9-8016-44EA-8038-28D1A1F3C524}
+name: Content Title
+key: content title
+content-length: 4
+
+Ford
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180907T151429Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+479ad47b-f75c-4187-90e2-b9867561c231
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180907T151429Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

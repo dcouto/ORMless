@@ -1,0 +1,11 @@
+﻿@using Foundation.TextContent
+@using Foundation.Extensions
+
+@model RenderingModel
+
+@if (Model.Item[_Content_Title_Constants.Content_Title_FieldName].IsNotNullAndNotWhiteSpace() || Sitecore.Context.PageMode.IsExperienceEditor)
+{
+    <div class="page-title container">
+        <h1>@Html.Sitecore().Field(_Content_Title_Constants.Content_Title_FieldName)</h1>
+    </div>
+}

@@ -1,0 +1,73 @@
+----item----
+version: 1
+id: {7ECA709A-E53C-4459-9F0B-E3D6857B3511}
+database: master
+path: /sitecore/content/Global Content/Global Generic Cards/Generic Card 1
+parent: {D9737F65-D9AA-463A-A604-277F2B3F7AB4}
+name: Generic Card 1
+master: {00000000-0000-0000-0000-000000000000}
+template: {02A52302-32F0-4860-8156-F4DCD7515C35}
+templatekey: Generic Card
+created: 20180727T220829Z
+
+----version----
+language: en
+version: 1
+revision: 31019673-72d8-4559-a05b-0392739a1276
+
+----field----
+field: {C51E85D9-8016-44EA-8038-28D1A1F3C524}
+name: Content Title
+key: content title
+content-length: 14
+
+Generic Card 1
+----field----
+field: {A24220FA-0377-41E3-B899-FC6273B4264B}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{975C013C-60CF-4799-9B3B-9FAB7128BBF4}" />
+----field----
+field: {5A2BD0DD-E068-400D-9141-22923A762697}
+name: Content Simple Description
+key: content simple description
+content-length: 86
+
+Bootstrap includes a handful of options for including some or all of our compiled CSS.
+----field----
+field: {F2BAA69E-41EF-4A1C-AE55-D2ED60E0F7FC}
+name: Link
+key: link
+content-length: 167
+
+<link id="{EE4DD3AE-617E-4B3D-A4E3-231CDFEE63FD}" querystring="" text="" anchor="" url="/ORMless/Home/Page Centric Components" title="" class="" linktype="internal" />
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180727T220829Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+31019673-72d8-4559-a05b-0392739a1276
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180907T144647Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

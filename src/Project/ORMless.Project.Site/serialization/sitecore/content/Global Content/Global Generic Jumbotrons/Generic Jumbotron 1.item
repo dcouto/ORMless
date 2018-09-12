@@ -1,0 +1,73 @@
+----item----
+version: 1
+id: {34E04D27-01DB-4B67-B449-B64B1009C7DE}
+database: master
+path: /sitecore/content/Global Content/Global Generic Jumbotrons/Generic Jumbotron 1
+parent: {027C92B4-D01A-4653-8994-1BC9397BA829}
+name: Generic Jumbotron 1
+master: {00000000-0000-0000-0000-000000000000}
+template: {C8B43F79-40DE-4365-9FA0-B4DE827AC207}
+templatekey: Generic Jumbotron
+created: 20180827T134450Z
+
+----version----
+language: en
+version: 1
+revision: 3b76b1e2-a2ff-4874-a54b-b669437707ba
+
+----field----
+field: {C51E85D9-8016-44EA-8038-28D1A1F3C524}
+name: Content Title
+key: content title
+content-length: 19
+
+Generic Jumbotron 1
+----field----
+field: {41E1C3BD-1A48-40B6-A4E6-EDAA845FFE9F}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{7BCC7224-01B4-473D-9426-264AE0AFFE9C}" />
+----field----
+field: {38DFB242-21AD-4ED8-BA28-E820D09F4539}
+name: Content Rich Description
+key: content rich description
+content-length: 133
+
+<p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+----field----
+field: {F2BAA69E-41EF-4A1C-AE55-D2ED60E0F7FC}
+name: Link
+key: link
+content-length: 124
+
+<link text="" anchor="" linktype="internal" class="" title=""  querystring="" id="{9A92B60D-14AA-4A35-B573-56E3B7F74F1F}" />
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180827T134450Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3b76b1e2-a2ff-4874-a54b-b669437707ba
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180827T134546Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

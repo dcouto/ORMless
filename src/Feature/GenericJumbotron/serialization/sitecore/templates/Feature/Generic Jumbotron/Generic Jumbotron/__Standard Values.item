@@ -1,0 +1,52 @@
+----item----
+version: 1
+id: {B6AEB1B3-CABE-4741-AB13-CCD8083CD0E1}
+database: master
+path: /sitecore/templates/Feature/Generic Jumbotron/Generic Jumbotron/__Standard Values
+parent: {C8B43F79-40DE-4365-9FA0-B4DE827AC207}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {C8B43F79-40DE-4365-9FA0-B4DE827AC207}
+templatekey: Generic Jumbotron
+created: 20180811T144239Z
+
+----version----
+language: en
+version: 1
+revision: 2c0cd5d4-bf53-44f6-b039-280b406bf321
+
+----field----
+field: {590ACC35-DFF5-4E3E-AF84-9E744A0C2A38}
+name: Link Text
+key: link text
+content-length: 9
+
+Read more
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180811T144239Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+2c0cd5d4-bf53-44f6-b039-280b406bf321
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180811T144622Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

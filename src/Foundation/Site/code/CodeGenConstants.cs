@@ -26,6 +26,10 @@ namespace Foundation.Site
 			public static readonly Guid TemplateId = new Guid(TemplateIdString);
 			public const string TemplateName = "_Site";
 
+					
+			public static readonly Guid Default_Global_Header_FieldId = new Guid("917f809f-f357-4479-96d9-02c3917f3351");
+			public const string Default_Global_Header_FieldName = "Default Global Header";
+			
 			
 
 	}

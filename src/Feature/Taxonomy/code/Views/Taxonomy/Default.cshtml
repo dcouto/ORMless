@@ -1,0 +1,14 @@
+﻿@using Feature.Taxonomy
+
+@model Feature.Taxonomy.Models.Taxonomy
+
+<div class="Taxonomy">
+	@if(Model != null && Model.SitecoreItem != null)
+	{
+		
+	}
+	else if (Sitecore.Context.PageMode.IsExperienceEditor)
+	{
+		<p>Taxonomy - the datasource is not set.  Click here to set the datasource.</p>
+	}
+</div>
