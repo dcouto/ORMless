@@ -97,7 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Feature.GlobalHeader.config" />
-    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\glassless.local.pubxml" />
     <None Include="Scripts\GlobalHeader.js" />
   </ItemGroup>
   <ItemGroup>
@@ -105,6 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CodeGenConstants.cs" />
+    <Compile Include="Controllers\CompositeGlobalHeaderController.cs" />
     <Compile Include="DependenciesRegistrar.cs" />
     <Compile Include="Controllers\GlobalHeaderController.cs" />
     <Compile Include="Models\GlobalHeader.cs" />
@@ -115,6 +116,7 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Views\GlobalHeader\\Default.cshtml" />
+    <Content Include="Views\CompositeGlobalHeader\Default.cshtml" />
     <None Include="Views\Web.config">
       <SubType>Designer</SubType>
     </None>
@@ -141,6 +143,7 @@
       <Name>Foundation.Site</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
